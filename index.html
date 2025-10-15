@@ -110,7 +110,7 @@
     <ul class="social-list">
 
       <li class="social-item">
-        <a href="https://github.com/muhammadtalha" target="_blank" class="social-link">
+        <a href="https://github.com/developing-wizard/" target="_blank" class="social-link">
           <ion-icon name="logo-github"></ion-icon>
         </a>
       </li>
@@ -619,14 +619,18 @@
 
 
 
-      <!--
-  - #CONTACT
--->
+     <!-- ================================
+  #CONTACT
+=================================== -->
 
 <article class="contact" data-page="contact">
 
   <header>
-    <h2 class="h2 article-title">Contact</h2>
+    <h2 class="h2 article-title">Let’s Connect</h2>
+    <p class="contact-subtitle">
+      Have a project in mind or just want to say hello?  
+      I’d love to hear from you — drop me a message below.
+    </p>
   </header>
 
   <!-- ===== Map Section ===== -->
@@ -634,40 +638,53 @@
     <figure>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3311.269540393864!2d73.05550301556564!3d33.68442038070968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfbf2d4e8df7b3%3A0x4dc139ee33fbb0!2sIslamabad%2C%20Pakistan!5e0!3m2!1sen!2s!4v1675000000000!5m2!1sen!2s"
-        width="400" height="300" loading="lazy">
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
       </iframe>
     </figure>
   </section>
 
-  <!-- ===== Netlify Contact Form ===== -->
+  <!-- ===== Contact Form ===== -->
   <section class="contact-form">
-    <h3 class="h3 form-title">Get in Touch</h3>
+    <h3 class="h3 form-title">
+      <ion-icon name="mail-outline" class="me-1"></ion-icon>
+      Get in Touch
+    </h3>
 
-    <!--  ✅ Netlify Form setup  -->
-    <form name="contact" method="POST" data-netlify="true" class="form" netlify-honeypot="bot-field">
-
-      <!-- Hidden form name for Netlify -->
+    <!-- ✅ Netlify Form -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="form">
       <input type="hidden" name="form-name" value="contact">
       <p class="hidden">
         <label>Don’t fill this out: <input name="bot-field" /></label>
       </p>
 
       <div class="input-wrapper">
-        <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
-        <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+        <div class="input-group">
+          <ion-icon name="person-outline"></ion-icon>
+          <input type="text" name="fullname" class="form-input" placeholder="Full Name" required data-form-input>
+        </div>
+
+        <div class="input-group">
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="email" name="email" class="form-input" placeholder="Email Address" required data-form-input>
+        </div>
       </div>
 
-      <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <div class="input-group textarea-group">
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+        <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      </div>
 
       <button class="form-btn" type="submit" data-form-btn>
         <ion-icon name="paper-plane"></ion-icon>
         <span>Send Message</span>
       </button>
-
     </form>
   </section>
 
 </article>
+
 
 
     </div>
